@@ -1,1 +1,18 @@
-html, body {}
+html, body {
+  background-color: #F1F1F1;
+}
+
+.question-card {
+  background-color: white;
+  width: 100%;
+}
+
+.question-card table {
+  padding: 20px 10px;
+  width: 100%;
+  color: #FF0000;
+}
+
+.question-card th {
+  text-align: center;
+}

@@ -15,12 +15,27 @@
 
 <div class="container">
   <form class="question-card">
-    <header>Question 1</header>
-    <span class="question"></span>
-    <input type="radio" name="opt-1-1" class="option opt-1-1">
-    <input type="radio" name="opt-1-2" class="option opt-1-2">
-    <input type="radio" name="opt-1-3" class="option opt-1-3">
-    <input type="radio" name="opt-1-4" class="option opt-1-4">
+    <table>
+      <tr>
+        <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
+        <th valign="middle">Ich wunche mir Kinder</th>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="input-form col-md-6">
+      <input type="radio" name="opt-1" value="opt-1-1" class="option opt-1-1">
+    </div>
+    <div class="input-form col-md-6">
+      <input type="radio" name="opt-1" value="opt-1-2" class="option opt-1-2">
+    </div>
+    <div class="input-form col-md-6">
+      <input type="radio" name="opt-1" value="opt-1-3" class="option opt-1-3">
+    </div>
+    <div class="input-form col-md-6">
+      <input type="radio" name="opt-1" value="opt-1-4" class="option opt-1-4">
+    </div>
   </form>
 </div>
 
