@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>pension.test</title>
+  <script src="js/question_rotator.js"></script>
+  <title>fdfdf</title>
 </head>
 
 
@@ -109,29 +110,87 @@
 
 
 <div class="container">
-  <form class="question-card">
-    <table>
-      <tr>
-        <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
-        <th valign="middle">Ich wunche mir Kinder</th>
-      </tr>
-    </table>
+  <form class="questions">
+    <div id="Question1" class="question-card">
+      <table>
+        <tr>
+          <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
+          <th valign="middle">Ich wunche mir Kinder</th>
+        </tr>
+      </table>
 
-    <br>
+      <br>
 
-    <div class="input-form col-md-6">
-      <input type="radio" name="opt-1" value="opt-1-1" class="option opt-1-1">
+      <div class="input-form col-md-3">
+        <input id="Opt-1-1" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-1" class="option">
+        <label for="Opt-1-1">
+          <img src="img/questions/opt-1-1.png" alt="opt-1-1">
+          <span>Nein</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-2" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-2" class="option">
+        <label for="Opt-1-2">
+          <img src="img/questions/opt-1-2.png" alt="opt-1-1">
+          <span>Mal sehen</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-3" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-3" class="option">
+        <label for="Opt-1-3">
+          <img src="img/questions/opt-1-3.png" alt="opt-1-1">
+          <span>Ja</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-4" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-4" class="option">
+        <label for="Opt-1-4">
+          <img src="img/questions/opt-1-4.png" alt="opt-1-1">
+          <span>Hab schon und noch mehr</span>
+        </label>
+      </div>
     </div>
-    <div class="input-form col-md-6">
-      <input type="radio" name="opt-1" value="opt-1-2" class="option opt-1-2">
-    </div>
-    <div class="input-form col-md-6">
-      <input type="radio" name="opt-1" value="opt-1-3" class="option opt-1-3">
-    </div>
-    <div class="input-form col-md-6">
-      <input type="radio" name="opt-1" value="opt-1-4" class="option opt-1-4">
-    </div>
-  </form>
+
+    <div id="Question2" class="question-card hidden">
+      <table>
+        <tr>
+          <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
+          <th valign="middle">Second Question</th>
+        </tr>
+      </table>
+
+      <br>
+      
+      <div class="input-form col-md-3">
+        <input id="Opt-1-2" type="radio" name="opt-1" value="opt-1-2" class="option">
+        <label for="Opt-1-2">
+          <img src="img/questions/opt-1-2.png" alt="opt-1-1">
+          <span>Mal sehen</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-1" type="radio" name="opt-1" value="opt-1-1" class="option">
+        <label for="Opt-1-1">
+          <img src="img/questions/opt-1-1.png" alt="opt-1-1">
+          <span>Nein</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-3" type="radio" name="opt-1" value="opt-1-3" class="option">
+        <label for="Opt-1-3">
+          <img src="img/questions/opt-1-3.png" alt="opt-1-1">
+          <span>Ja</span>
+        </label>
+      </div>
+      <div class="input-form col-md-3">
+        <input id="Opt-1-4" type="radio" name="opt-1" value="opt-1-4" class="option">
+        <label for="Opt-1-4">
+          <img src="img/questions/opt-1-4.png" alt="opt-1-1">
+          <span>Hab schon und noch mehr</span>
+        </label>
+      </div>
+    </form>
+  </div>
 </div>
 
 <!-- <div class="panel panel-default">
@@ -365,4 +424,5 @@
 
 
 </body>
+
 </html>
