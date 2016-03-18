@@ -15,7 +15,7 @@
 <body>
 <div class="navbar-collapse collapse menu">
 
-          <form class="navbar-form navbar login-form" role="form">
+          <form name="login" class="navbar-form navbar login-form" role="form">
           <img src="img/name.jpg">
             <div class="form-group">
              
@@ -26,7 +26,10 @@
               <input placeholder="PIN" class="form-control" type="password">
             </div>
             <button type="submit" class="btn btn-success btn-login"><span class="glyphicon glyphicon-play-circle"></span> </button>
-            <input class="form-control" placeholder="Was suchen Sie?" type="text">
+          </form>
+
+          <form name="search" class="search-field">
+              <input  class="form-control" placeholder="Was suchen Sie?" type="text">
           </form>
           </div>
 
