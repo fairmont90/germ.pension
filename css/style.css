@@ -78,6 +78,27 @@ html, body {
   text-align: center;
 }
 
+.question-card input[type=radio] {
+  display: none;
+}
+
+.question-card input[type=radio]:checked + label {
+  border: 5px solid white;
+}
+
+.question-card label > img {
+  width: 100%;
+}
+
+.question-card label > span {
+  display: block;
+  background-color: #ff0000;
+  color: white;
+  height: 70px;
+  margin-top: 20px;
+  padding: 10px 10px 0 10px;
+}
+
 /* FOOTER */
 
 .main {
