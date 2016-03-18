@@ -13,11 +13,16 @@ html, body {
 
 .btn-login,
 .btn-login:hover,
+.bth-login:link,
 .btn-login:active,
-.btn-login:visited{
+.btn-login:visited,
+.btn-login:focus,
+.btn-login:target,
+.btn-login:active:hover {
 	color: white;
 	background-color: transparent;
 	border-color: transparent;
+
 }
 
 .btn-search{

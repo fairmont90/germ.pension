@@ -1,3 +1,9 @@
+<?php 
+
+require 'app/bootstrap.php';
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,24 +14,36 @@
   <title>fdfdf</title>
 </head>
 <body>
-  <div class="navbar-collapse collapse menu">
+  <div class="navbar-collapse collapse menu" style="height:90px !important">
 
-        <form name="login" class="navbar-form navbar login-form" role="form">
+        <?php if ( !isset($_SESSION['id']) ) { ?>
+
+        <form name="login" class="navbar-form navbar login-form" role="form" action="login.php" method="POST">
           <img src="img/name.jpg">
             <div class="form-group">
              
 
-              <input placeholder="Anmeldename" class="form-control" type="text">
+              <input placeholder="Anmeldename" name="login" class="form-control" type="text">
             </div>
             <div class="form-group">
-              <input placeholder="PIN" class="form-control" type="password">
+              <input placeholder="PIN" class="form-control" name="password" type="password">
             </div>
             <button type="submit" class="btn btn-success btn-login"><span class="glyphicon glyphicon-play-circle"></span> </button>
-          </form>
+        </form>
+
+        <?php }
+          else { ?>
+
+          <div class="navbar-form navbar login-form">
+            <a href="exit.php" class="btn btn-danger">Exit</a>
+          </div>
+
+          <?php } ?>
 
           <form name="search" class="search-field">
               <input  class="form-control" placeholder="Was suchen Sie?" type="text">
           </form>
+
           </div>
 
           <div class="img-container">
@@ -40,6 +58,8 @@
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-envelope"></span></button>
          </div>
        </div>
+
+       
 
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
