@@ -1,87 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/question_rotator.js"></script>
   <title>fdfdf</title>
 </head>
-
-
-    <title>Ôóòåð â íèçó</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <style type="text/css">
-    html, body {
-        height: 100%;
-    }
- 
-    body {
-        margin: 0;
-        padding: 0;
-    }
- 
-    .main {
-        position: relative;
-        min-height: 100%;
-        height: auto !important;
-        _height: 100%;
-    }
- 
-    .footer-margin {
-        position: static;
-        width: auto;
-        border: 0px dotted maroon;
-        clear: both;
-        margin: 0;
-        padding: 0;
-        height: 1;
-        font-size: 1px;
-        height: 100px;
-    }
- 
-    .footer {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 6;
-        width: 100%;
-        overflow: hidden;
-        border: 0px dotted green;
-        background: #7D7D7D;
-    }
-
-    .podvalStyleBig{
-    	font-size: 1.2em;
-    	color: white;
-    }
-
-    .podvalStyleSmall{
-    	font-size: 1em;
-    	color: white;
-    }
-
-    .footerContact {
-    	margin-top: 10px;
-    	padding-bottom: 10px;
-    }
-
-    .footerContact a{
-    	margin-right: 10px;
-    }
- 
-</style>
-
-
-
-
-
-
 <body>
-<div class="navbar-collapse collapse menu">
+  <div class="navbar-collapse collapse menu">
 
-          <form name="login" class="navbar-form navbar login-form" role="form">
+        <form name="login" class="navbar-form navbar login-form" role="form">
           <img src="img/name.jpg">
             <div class="form-group">
              
@@ -110,9 +39,9 @@
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-comment"></span></button>
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-envelope"></span></button>
          </div>
-         </div>
+       </div>
 
-                    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navigation">
