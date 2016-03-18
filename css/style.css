@@ -1,15 +1,16 @@
 html, body {
   height: 100%;
+  background-color: #F1F1F1;
 }
 
 .menu{
-	
 	background-color: red;
 }
 
 .login-form{
 	left: 20px;
 }
+
 .btn-login,
 .btn-login:hover,
 .btn-login:active,
@@ -64,13 +65,34 @@ html, body {
 	color: red;
 }
 
-html, body {
-  background-color: #F1F1F1;
-}
+
+/* QUESTIONS */
 
 .question-card {
   background-color: white;
   width: 100%;
+  padding-top: 20px;
+}
+
+.question-card.intro table {
+  color: black;
+  text-align: left;
+}
+
+.question-card.intro th {
+  text-align: left;
+  padding: 10px 5px 30px 10px;
+}
+
+.btn-start-test {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  vertical-align: bottom;
 }
 
 .question-card table {
@@ -89,6 +111,10 @@ html, body {
 
 .question-card input[type=radio]:checked + label {
   border: 5px solid white;
+}
+
+.question-card label {
+  cursor: pointer;
 }
 
 .question-card label > img {
@@ -126,7 +152,6 @@ html, body {
 }
 
 .footer {
-    position: absolute;
     left: 0;
     bottom: 0;
     z-index: 6;
