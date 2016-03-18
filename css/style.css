@@ -3,11 +3,11 @@ html, body {
   background-color: #F1F1F1;
 }
 
-.menu{
+.menu {
 	background-color: red;
 }
 
-.login-form{
+.login-form {
 	left: 20px;
 }
 
@@ -25,7 +25,7 @@ html, body {
 
 }
 
-.btn-search{
+.btn-search {
 	width: 15em;
 }
 
@@ -40,22 +40,22 @@ html, body {
 
 }
 
-.menu-contact{
+.menu-contact {
 	position: absolute;
 	right: 0px;
 	top: 1em;
 }
-.menu-option{
+.menu-option {
 	position: absolute;
 	left: 0px;
 	top: 1em;
 }
 
-.img-container{
+.img-container {
 	position: relative;
 }
 
-.text-logo{
+.text-logo {
 	position: absolute;;
 	bottom: 2em;
 	font-size: 3em;
@@ -66,7 +66,7 @@ html, body {
 
 }
 
-.navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-nav > li > a {
 	color: red;
 }
 
@@ -166,12 +166,20 @@ html, body {
     background: #7D7D7D;
 }
 
-.podvalStyleBig{
+.podvalStyleBig {
   font-size: 1.2em;
   color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
 }
 
-.podvalStyleSmall{
+.podvalStyleSmall {
+	display: block;
+}
+
+.podvalStyleSmall,
+.footerContact a {
   font-size: 1em;
   color: white;
 }
@@ -181,6 +189,6 @@ html, body {
   padding-bottom: 10px;
 }
 
-.footerContact a{
+.footerContact a {
   margin-right: 10px;
 }

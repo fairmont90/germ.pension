@@ -246,207 +246,84 @@ require 'app/bootstrap.php';
     	<div class="container">
 				<div class="row">
     		<div class="col-md-3">
-    		</br>	
+    			<a class="podvalStyleBig" href="https://www.google.com/"><b>Rund ums Konto</b></a>
 
-    			<a class="podvalStyleBig" href="https://www.google.com/">
-		   			<b>Rund ums Konto</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Girokonto</b></a>
 
-		   	</br>
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Kreditkarte</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Girokonto</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Tagesgeld</b></a>
 
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Dispositionskredit</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Kreditkarte</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Tagesgeld</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Dispositionskredit</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Online-Banking</b>
-		   		</a>
-		  
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Online-Banking</b></a>
     		</div>
 
     		<div class="col-md-3">
-    		</br>
 
-    			<a class="podvalStyleBig" href="https://www.google.com/">
-		   		<b>Sparen und Anlegen</b>
-		   		</a>
+    			<a class="podvalStyleBig" href="https://www.google.com/"><b>Sparen und Anlegen</b></a>
 
-				</br>
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassenbuch</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassenbuch</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Festgeld</b></a>
 
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Pramiensparen Flexibel</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Festgeld</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-PS-Lotterie-Sparen</b></a>
 
-		  	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>LBS-Bausparen</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Pramiensparen Flexibel</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Deka-BasisAnlage</b></a>
 
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-PS-Lotterie-Sparen</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>LBS-Bausparen</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Deka-BasisAnlage</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-RiesterRente</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-RiesterRente</b></a>
 
     		</div>
 
     		<div class="col-md-3">
-    		</br>
+    			<a class="podvalStyleBig" href="https://www.google.com/"><b>Finanzieren</b></a>
 
-    			<a class="podvalStyleBig" href="https://www.google.com/">
-		   			<b>Finanzieren</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Baufinanzierung</b></a>
 
-				</br>
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Privatkredit</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Baufinanzierung</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sparkassen-Autokredit</b></a>
 
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Privatkredit</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sparkassen-Autokredit</b>
-		   		</a>
-
-				</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>SparkassenCard Plus</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>SparkassenCard Plus</b></a>
 
     		</div>
 
     		<div class="col-md-3">
-    		</br>
-    			<a class="podvalStyleBig" href="https://www.google.com/">
-		   		<b>Services</b>
-		   		</a>
+    			<a class="podvalStyleBig" href="https://www.google.com/"><b>Services</b></a>
 
-		   	</br>
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>SEPA</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>SEPA</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Sicherheit im Internet</b></a>
 
-		  	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Elektronisches Postfach</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Sicherheit im Internet</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Handy aufladen</b></a>
 
-		   	</br>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Kartenveriust</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Elektronisches Postfach</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Freistellungsauftrag</b></a>
 
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Handy aufladen</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Kartenveriust</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Freistellungsauftrag</b>
-		   		</a>
-
-		   	</br>
-
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Filiale finden</b>
-		   		</a>
+		   		<a class="podvalStyleSmall" href="https://www.google.com/"><b>Filiale finden</b></a>
 
     		</div>
     		</div>
 
     		<div class="footerContact">
-    		</br>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>AGB</b>
-		   		</a>
+		   		<a href="https://www.google.com/"><b>AGB</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Datenschutz</b>
-		   		</a>
+		   		<a href="https://www.google.com/"><b>Datenschutz</b></a>
 
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Impressum</b>
-		   		</a>
+		   		<a href="https://www.google.com/"><b>Impressum</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Preise und Hinweise</b>
-		   		</a>
+		   		<a href="https://www.google.com/"><b>Preise und Hinweise</b></a>
 
-		   		<a class="podvalStyleSmall" href="https://www.google.com/">
-		   			<b>Kontakt</b>
-		   		</a>
-
+		   		<a href="https://www.google.com/"><b>Kontakt</b></a>
     		</div>
 
 	   	</div>
