@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>fdfdf</title>
+  <title>pension.test</title>
 </head>
+
+
+    <title>Футер в низу</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+    html, body {
+        height: 100%;
+    }
+ 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .main {
+        position: relative;
+        min-height: 100%;
+        height: auto !important;
+        _height: 100%;
+    }
+ 
+    .footer-margin {
+        position: static;
+        width: auto;
+        border: 0px dotted maroon;
+        clear: both;
+        margin: 0;
+        padding: 0;
+        height: 1;
+        font-size: 1px;
+        height: 100px;
+    }
+ 
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 6;
+        width: 100%;
+        overflow: hidden;
+        border: 0px dotted green;
+        background: #7D7D7D;
+    }
+
+    .podvalStyleBig{
+    	font-size: 1.2em;
+    	color: white;
+    }
+
+    .podvalStyleSmall{
+    	font-size: 1em;
+    	color: white;
+    }
+
+    .footerContact {
+    	margin-top: 10px;
+    	padding-bottom: 10px;
+    }
+
+    .footerContact a{
+    	margin-right: 10px;
+    }
+ 
+</style>
+
+
+
+
+
+
 <body>
 <div class="navbar-collapse collapse menu">
 
@@ -62,6 +133,236 @@
     </div>
   </form>
 </div>
+
+<!-- <div class="panel panel-default">
+ <div class="panel-footer">Подвал</div>
+</div> -->
+
+
+
+
+<div class="main">
+ 
+    <div class="footer-margin "></div>
+
+    <div class="footer">
+
+    	<div class="container">
+				<div class="row">
+    		<div class="col-md-3">
+    		</br>	
+
+    			<a class="podvalStyleBig" href="https://www.google.com/">
+		   			<b>Rund ums Konto</b>
+		   		</a>
+
+		   	</br>
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Girokonto</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Kreditkarte</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Tagesgeld</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Dispositionskredit</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Online-Banking</b>
+		   		</a>
+		  
+    		</div>
+
+    		<div class="col-md-3">
+    		</br>
+
+    			<a class="podvalStyleBig" href="https://www.google.com/">
+		   		<b>Sparen und Anlegen</b>
+		   		</a>
+
+				</br>
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassenbuch</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Festgeld</b>
+		   		</a>
+
+		  	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Pramiensparen Flexibel</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-PS-Lotterie-Sparen</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>LBS-Bausparen</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Deka-BasisAnlage</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-RiesterRente</b>
+		   		</a>
+
+    		</div>
+
+    		<div class="col-md-3">
+    		</br>
+
+    			<a class="podvalStyleBig" href="https://www.google.com/">
+		   			<b>Finanzieren</b>
+		   		</a>
+
+				</br>
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Baufinanzierung</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Privatkredit</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sparkassen-Autokredit</b>
+		   		</a>
+
+				</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>SparkassenCard Plus</b>
+		   		</a>
+
+    		</div>
+
+    		<div class="col-md-3">
+    		</br>
+    			<a class="podvalStyleBig" href="https://www.google.com/">
+		   		<b>Services</b>
+		   		</a>
+
+		   	</br>
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>SEPA</b>
+		   		</a>
+
+		  	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Sicherheit im Internet</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Elektronisches Postfach</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Handy aufladen</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Kartenveriust</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Freistellungsauftrag</b>
+		   		</a>
+
+		   	</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Filiale finden</b>
+		   		</a>
+
+    		</div>
+    		</div>
+
+    		<div class="footerContact">
+    		</br>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>AGB</b>
+		   		</a>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Datenschutz</b>
+		   		</a>
+
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Impressum</b>
+		   		</a>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Preise und Hinweise</b>
+		   		</a>
+
+		   		<a class="podvalStyleSmall" href="https://www.google.com/">
+		   			<b>Kontakt</b>
+		   		</a>
+
+    		</div>
+
+	   	</div>
+
+    </div>
+ 
+</div>
+
+
+
+
+
 
 </body>
 </html>
