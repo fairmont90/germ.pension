@@ -1,4 +1,7 @@
-html, body {}
+html, body {
+  height: 100%;
+}
+
 .menu{
 	
 	background-color: red;
@@ -92,4 +95,55 @@ html, body {
   height: 70px;
   margin-top: 20px;
   padding: 10px 10px 0 10px;
+}
+
+/* FOOTER */
+
+.main {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    _height: 100%;
+}
+
+.footer-margin {
+    position: static;
+    width: auto;
+    border: 0px dotted maroon;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    height: 1;
+    font-size: 1px;
+    height: 100px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 6;
+    width: 100%;
+    overflow: hidden;
+    border: 0px dotted green;
+    background: #7D7D7D;
+}
+
+.podvalStyleBig{
+  font-size: 1.2em;
+  color: white;
+}
+
+.podvalStyleSmall{
+  font-size: 1em;
+  color: white;
+}
+
+.footerContact {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footerContact a{
+  margin-right: 10px;
 }
