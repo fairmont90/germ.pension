@@ -59,6 +59,11 @@ html, body {
 	left: 10em;
 
 }
+
+.navbar-default .navbar-nav > li > a{
+	color: red;
+}
+
 html, body {
   background-color: #F1F1F1;
 }

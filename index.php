@@ -9,9 +9,75 @@
 </head>
 
 
-    <title>Футер в низу</title>
+    <title>Г”ГіГІГҐГ° Гў Г­ГЁГ§Гі</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
+    <style type="text/css">
+    html, body {
+        height: 100%;
+    }
+ 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .main {
+        position: relative;
+        min-height: 100%;
+        height: auto !important;
+        _height: 100%;
+    }
+ 
+    .footer-margin {
+        position: static;
+        width: auto;
+        border: 0px dotted maroon;
+        clear: both;
+        margin: 0;
+        padding: 0;
+        height: 1;
+        font-size: 1px;
+        height: 100px;
+    }
+ 
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 6;
+        width: 100%;
+        overflow: hidden;
+        border: 0px dotted green;
+        background: #7D7D7D;
+    }
+
+    .podvalStyleBig{
+    	font-size: 1.2em;
+    	color: white;
+    }
+
+    .podvalStyleSmall{
+    	font-size: 1em;
+    	color: white;
+    }
+
+    .footerContact {
+    	margin-top: 10px;
+    	padding-bottom: 10px;
+    }
+
+    .footerContact a{
+    	margin-right: 10px;
+    }
+ 
+</style>
+
+
+
+
+
+
 <body>
 <div class="navbar-collapse collapse menu">
 
@@ -43,7 +109,24 @@
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-earphone"></span></button>
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-comment"></span></button>
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-envelope"></span></button>
-         </div></div>
+         </div>
+         </div>
+
+                    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navigation">
+            <li><a href="#">Uberblick</a></li>
+            <li><a href="#">Detalis</a></li>
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown"> -->
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
 
 
 <div class="container">
@@ -131,7 +214,7 @@
 </div>
 
 <!-- <div class="panel panel-default">
- <div class="panel-footer">Подвал</div>
+ <div class="panel-footer">ГЏГ®Г¤ГўГ Г«</div>
 </div> -->
 
 
