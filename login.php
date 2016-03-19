@@ -21,3 +21,5 @@ if ( $result ) {
 else {
 	echo 'User was not found';
 }
+
+header('Location: /');

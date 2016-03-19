@@ -1,6 +1,7 @@
 <?php 
 
-require 'app/bootstrap.php';
+require_once 'app/bootstrap.php';
+require_once 'app/pension_poll.php';
 
  ?>
 
@@ -32,13 +33,14 @@ require 'app/bootstrap.php';
         </form>
 
         <?php }
-          else { ?>
+          else {
+        ?>
 
-          <div class="navbar-form navbar login-form">
-            <a href="exit.php" class="btn btn-danger">Exit</a>
-          </div>
+        <div class="navbar-form navbar login-form">
+          <a href="exit.php" class="btn btn-danger">Exit</a>
+        </div>
 
-          <?php } ?>
+        <?php } ?>
 
           <form name="search" class="search-field">
               <input  class="form-control" placeholder="Was suchen Sie?" type="text">
@@ -59,8 +61,6 @@ require 'app/bootstrap.php';
          </div>
        </div>
 
-       
-
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-collapse collapse">
@@ -80,153 +80,9 @@ require 'app/bootstrap.php';
 
 <div class="container">
   <form class="questions">
-    <div id="Question0" class="question-card intro">
-      <table>
-        <tr>
-          <th valign="middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio commodi deserunt, dolorum doloribus porro qui expedita cupiditate, sequi voluptates nostrum temporibus cum error. Numquam aperiam labore ut illo fugiat distinctio.</th>
-        </tr>
-      </table>
-
-      <br>
-
-      <div>
-        <table>
-          <tr>
-            <td><img src="img/questions/opt-0.png" alt="opt-0"></td>
-            <td class="btn-start-test" onclick="nextQuestion()">Jetzt starten <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-
-    <div id="Question1" class="question-card hidden">
-      <table>
-        <tr>
-          <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
-          <th valign="middle">Ich wunche mir Kinder</th>
-        </tr>
-      </table>
-
-      <br>
-
-      <div class="input-form col-md-3">
-        <input id="Opt-1-1" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-1" class="option">
-        <label for="Opt-1-1">
-          <img src="img/questions/opt-1-1.png" alt="opt-1-1">
-          <span>Nein</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-2" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-2" class="option">
-        <label for="Opt-1-2">
-          <img src="img/questions/opt-1-2.png" alt="opt-1-1">
-          <span>Mal sehen</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-3" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-3" class="option">
-        <label for="Opt-1-3">
-          <img src="img/questions/opt-1-3.png" alt="opt-1-1">
-          <span>Ja</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-4" onclick="nextQuestion()" type="radio" name="opt-1" value="opt-1-4" class="option">
-        <label for="Opt-1-4">
-          <img src="img/questions/opt-1-4.png" alt="opt-1-1">
-          <span>Hab schon und noch mehr</span>
-        </label>
-      </div>
-    </div>
-
-    <div id="Question2" class="question-card hidden">
-      <table>
-        <tr>
-          <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
-          <th valign="middle">Second Question</th>
-        </tr>
-      </table>
-
-      <br>
-      
-      <div class="input-form col-md-3">
-        <input id="Opt-1-2" type="radio" name="opt-1" value="opt-1-2" class="option">
-        <label for="Opt-1-2">
-          <img src="img/questions/opt-1-2.png" alt="opt-1-1">
-          <span>Mal sehen</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-1" type="radio" name="opt-1" value="opt-1-1" class="option">
-        <label for="Opt-1-1">
-          <img src="img/questions/opt-1-1.png" alt="opt-1-1">
-          <span>Nein</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-3" type="radio" name="opt-1" value="opt-1-3" class="option">
-        <label for="Opt-1-3">
-          <img src="img/questions/opt-1-3.png" alt="opt-1-1">
-          <span>Ja</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-4" type="radio" name="opt-1" value="opt-1-4" class="option">
-        <label for="Opt-1-4">
-          <img src="img/questions/opt-1-4.png" alt="opt-1-1">
-          <span>Hab schon und noch mehr</span>
-        </label>
-      </div>
-    </div>
-
-
-    <div id="Question3" class="question-card hidden">
-      <table>
-        <tr>
-          <th valign="middle"><img src="img/pic-1.png" alt="Kinder Image"></th>
-          <th valign="middle">Third Question</th>
-        </tr>
-      </table>
-
-      <br>
-      
-      <div class="input-form col-md-3">
-        <input id="Opt-1-2" type="radio" name="opt-1" value="opt-1-2" class="option">
-        <label for="Opt-1-2">
-          <img src="img/questions/opt-1-2.png" alt="opt-1-1">
-          <span>Mal sehen</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-1" type="radio" name="opt-1" value="opt-1-1" class="option">
-        <label for="Opt-1-1">
-          <img src="img/questions/opt-1-1.png" alt="opt-1-1">
-          <span>Nein</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-3" type="radio" name="opt-1" value="opt-1-3" class="option">
-        <label for="Opt-1-3">
-          <img src="img/questions/opt-1-3.png" alt="opt-1-1">
-          <span>Ja</span>
-        </label>
-      </div>
-      <div class="input-form col-md-3">
-        <input id="Opt-1-4" type="radio" name="opt-1" value="opt-1-4" class="option">
-        <label for="Opt-1-4">
-          <img src="img/questions/opt-1-4.png" alt="opt-1-1">
-          <span>Hab schon und noch mehr</span>
-        </label>
-      </div>
-    </div>
-
-    <div id="Question4" class="question-card outtro hidden">
-      <table>
-        <tr>
-          <th valign="middle">FINISH</th>
-        </tr>
-      </table>
-    </div>
+    <?php 
+      render_questions();
+     ?>
   </form>
 </div>
 

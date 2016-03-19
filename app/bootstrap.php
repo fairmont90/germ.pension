@@ -2,5 +2,5 @@
 
 session_start();
 
-require 'config.php';
-require 'connect.php';
+require_once 'config.php';
+require_once 'connect.php';
