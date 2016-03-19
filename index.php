@@ -12,7 +12,7 @@ require_once 'app/pension_poll.php';
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/question_rotator.js"></script>
-  <title>fdfdf</title>
+  <title>Pension poll</title>
 </head>
 <body>
   <div class="navbar-collapse collapse menu" style="height:90px !important">
@@ -79,7 +79,7 @@ require_once 'app/pension_poll.php';
 
 
 <div class="container">
-  <form class="questions">
+  <form class="questions" action="save_data.php" method="POST">
     <div id="Question0" class="question-card intro">
       <table>
         <tr>
@@ -107,6 +107,17 @@ require_once 'app/pension_poll.php';
       <table>
         <tr>
           <th valign="middle">FINISH</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="input-form">
+              Please enter your email:<br>
+              <input type="text" name="email"><br>
+            </div>
+            <div class="input-form">
+              <input type="submit" value="Send">
+            </div>
+          </td>
         </tr>
       </table>
     </div>

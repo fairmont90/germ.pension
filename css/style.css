@@ -135,6 +135,27 @@ html, body {
   padding: 10px 10px 0 10px;
 }
 
+.question-card.outtro table {
+  color: black;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.question-card.outtro th,
+.question-card.outtro td {
+  text-align: left;
+  padding: 10px 5px 30px 10px;
+}
+
+
+/* ADMIN */
+
+.field-user-email {
+  padding: 10px;
+  background-color: red;
+  display: block;
+}
+
 /* FOOTER */
 
 .main {

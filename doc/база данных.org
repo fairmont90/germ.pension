@@ -1,0 +1,22 @@
+* БД для опросника немцев
+** Users
+
+| id | user_email           | password |
+|  1 | pereskokow@gmail.com | 1235     |
+
+** Ответы пользователей - UserAnswers
+
+| id | sesion_id | user_id | question_id | answer_id |
+|  1 |         1 |       1 |           1 |         4 |
+|  2 |         1 |       1 |           2 |         3 |
+|  3 |         1 |       1 |           3 |         1 |
+
+
+** Вопросы - Questions
+
+| id | question | question_icon |
+
+** Варианты ответов - QuestionAnswers
+
+| id | question_id | answer_text | answer_image |
+|    |             |             |              |  
