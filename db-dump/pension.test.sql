@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Мар 19 2016 г., 12:39
+-- Время создания: Мар 19 2016 г., 14:32
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -39,18 +39,18 @@ CREATE TABLE IF NOT EXISTS `questionanswers` (
 --
 
 INSERT INTO `questionanswers` (`Id`, `QuestionId`, `AnswerText`, `AnswerImage`) VALUES
-(1, 1, 'Nein', 'img/questions/opt-1-1.png'),
-(2, 1, 'Mal sehen', 'img/questions/opt-1-2.png'),
-(3, 1, 'Ja', 'img/questions/opt-1-3.png'),
-(4, 1, 'Hab schon und noch mehr', 'img/questions/opt-1-4.png'),
-(5, 2, 'Mal sehen', 'img/questions/opt-1-2.png'),
-(6, 2, 'Nein', 'img/questions/opt-1-1.png'),
-(7, 2, 'Ja', 'img/questions/opt-1-3.png'),
-(8, 2, 'Hab schon und noch mehr', 'img/questions/opt-1-4.png'),
-(9, 3, 'Mal sehen', 'img/questions/opt-1-2.png'),
-(10, 3, 'Nein', 'img/questions/opt-1-1.png'),
-(11, 3, 'Ja', 'img/questions/opt-1-3.png'),
-(12, 3, 'Hab schon und noch mehr', 'img/questions/opt-1-4.png');
+(1, 1, 'chamomile', 'img/questions/flowers-1.png'),
+(2, 1, 'rose', 'img/questions/flowers-2.png'),
+(3, 1, 'tulips', 'img/questions/flowers-3.png'),
+(4, 1, 'gladiolus', 'img/questions/flowers-4.png'),
+(5, 2, 'Audi', 'img/questions/audi.png'),
+(6, 2, 'Bmw', 'img/questions/bmw.png'),
+(7, 2, 'Mercedes', 'img/questions/mercedes.png'),
+(8, 2, 'Ford', 'img/questions/ford.png'),
+(9, 3, 'Paris', 'img/questions/city_1.png'),
+(10, 3, 'London', 'img/questions/city_2.png'),
+(11, 3, 'Boston', 'img/questions/city_3.png'),
+(12, 3, 'China', 'img/questions/city_4.png');
 
 -- --------------------------------------------------------
 
@@ -70,9 +70,9 @@ CREATE TABLE IF NOT EXISTS `questions` (
 --
 
 INSERT INTO `questions` (`Id`, `Question`, `QuestionIcon`) VALUES
-(1, 'Ich wunche mir Kinder', 'img/pick-1.png'),
-(2, 'Second Question', 'img/pick-1.png'),
-(3, 'Third Question', 'img/pick-1.png');
+(1, 'Which flowers do you like', 'img/pic-1.png'),
+(2, 'Favorite car vendor', 'img/pic-1.png'),
+(3, 'Favorite city', 'img/pic-1.png');
 
 -- --------------------------------------------------------
 
