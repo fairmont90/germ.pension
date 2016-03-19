@@ -73,6 +73,42 @@ html, body {
 
 /* QUESTIONS */
 
+#QuestionNumbers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#QuestionNumbers span {
+    background-color: gray;
+    border-radius: 50%;
+    color: white;
+    display: block;
+    line-height: 20px;
+	width: 20px;
+	height: 20px;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+    padding: auto 0;
+}
+
+#QuestionNumbers span:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    right: -10px;
+    top: 9px;       
+}
+
+#QuestionNumbers .red,
+#QuestionNumbers .red:after {
+    background-color: red !important;
+}
+
 .question-card {
   background-color: white;
   width: 100%;

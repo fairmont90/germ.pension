@@ -2,17 +2,29 @@
 
 require_once 'bootstrap.php';
 
+global $dbh;
+
+$sql_req = 'select * from questions';
+$sth = $dbh->query($sql_req);
+
+$questions = $sth->fetchAll();
+
+$sql_req = 'select * from questionanswers';
+$sth = $dbh->query($sql_req);
+$answers = $sth->fetchAll();
+
+
+function render_question_numbers() {
+    global $questions;
+
+    $question_count = count($questions) + 1;
+    for ($i=1; $i < $question_count; $i++) { 
+        echo '<span>' . $i . '</span>';
+    }
+}
+
 function render_questions() {
-	global $dbh;
-
-	$sql_req = 'select * from questions';
-	$sth = $dbh->query($sql_req);
-
-	$questions = $sth->fetchAll();
-
-	$sql_req = 'select * from questionanswers';
-	$sth = $dbh->query($sql_req);
-	$answers = $sth->fetchAll();
+    global $answers, $questions;
 
 	foreach ($questions as $key => $question) {
 		$qid = $question['Id'];

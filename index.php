@@ -79,6 +79,14 @@ require_once 'app/pension_poll.php';
 
 
 <div class="container">
+  <div class="pagination-centered">
+    <div id="QuestionNumbers">
+      <span class="red">0</span>
+      <?php render_question_numbers(); ?>
+      <span>e</span>
+    </div>
+  </div>
+                  
   <form class="questions" action="save_data.php" method="POST">
     <div id="Question0" class="question-card intro">
       <table>
