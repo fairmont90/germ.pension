@@ -5,7 +5,8 @@ Rente
 Magnat exceatquas experes cum, quo modicte mquodic illuptioria verum.
 
 На англ. яз.:
-
+Pension
+The pension is interesting to you
 
 
 2. ("Руль")
@@ -14,7 +15,8 @@ Führerschein
 Magnat exceatquas experes cum, quo modicte mquodic illuptioria verum.
 
 На англ. яз.:
-Driving licence
+Driving licence (Car)
+You are interested the car
 
 3. ("Дом")
 На немецком:
@@ -23,6 +25,8 @@ Magnat exceatquas experes cum, quo modicte mquodic illuptioria
 verum.
 
 На англ. яз.:
+House
+You are interested new house
 
 4. ("Кольца")
 На немецком:
@@ -30,6 +34,8 @@ Ehe
 Magnat exceatquas experes cum, quo modicte mquodic illuptioria verum.
 
 На англ. яз.:
+Wedding
+You are interested marriage
 
 
 5. ("Коляска")
@@ -39,6 +45,7 @@ Magnat exceatquas experes cum, quo modicte mquodic illuptioria verum.
 
 На англ. яз.:
 Child wish
+You want to bring children
 
 
 6. ("Пальма")
@@ -47,6 +54,8 @@ Weltreise
 Magnat exceatquas experes cum, quo modicte mquodic illuptioria verum.
 
 На англ. яз.:
+Travel
+You are interested travel
 
 
 
