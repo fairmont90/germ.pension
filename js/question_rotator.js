@@ -1,4 +1,4 @@
-var current_question = 1;
+var current_question = 0;
 
 function nextQuestion() {
     // current_question ++;

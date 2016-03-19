@@ -16,9 +16,8 @@ function render_questions() {
 
 	foreach ($questions as $key => $question) {
 		$qid = $question['Id'];
-		$is_hidden = $key != 0;
 		?>
-<div id="Question<?php echo $qid?>" class="question-card <?php echo $is_hidden ? 'hidden' : '';?>">
+<div id="Question<?php echo $qid?>" class="question-card hidden">
   <table>
     <tr>
       <th valign="middle"><img src="<?php echo $question['QuestionIcon']?>" alt="Kinder Image"></th>

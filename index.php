@@ -80,9 +80,37 @@ require_once 'app/pension_poll.php';
 
 <div class="container">
   <form class="questions">
+    <div id="Question0" class="question-card intro">
+      <table>
+        <tr>
+          <th valign="middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio commodi deserunt, dolorum doloribus porro qui expedita cupiditate, sequi voluptates nostrum temporibus cum error. Numquam aperiam labore ut illo fugiat distinctio.</th>
+        </tr>
+      </table>
+
+      <br>
+
+      <div>
+        <table>
+          <tr>
+            <td><img src="img/questions/opt-0.png" alt="opt-0"></td>
+            <td class="btn-start-test" onclick="nextQuestion()">Jetzt starten <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
     <?php 
       render_questions();
      ?>
+
+     <div id="Question4" class="question-card outtro hidden">
+      <table>
+        <tr>
+          <th valign="middle">FINISH</th>
+        </tr>
+      </table>
+    </div>
+    
   </form>
 </div>
 
