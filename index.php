@@ -18,40 +18,14 @@ require_once 'app/pension_poll.php';
   <title>Pension poll</title>
 </head>
 <body>
-  
-  <!-- Popup -->
-  <div id="popup">
-    
-    <table>
-      <tr>
-        <td>fdf</td>
-        <td>dfdf</td>
-      </tr>
-      <tr>
-        <td>fdf</td>
-        <td>dfdf</td>
-      </tr>
-      <tr>
-        <td>fdf</td>
-        <td>dfdf</td>
-      </tr>
-      <tr>
-        <td>dfdf</td>
-        <td>dfdf</td>
-      </tr>
-      <tr>
-        <td>dfdf</td>
-        <td>dfdf</td>
-      </tr>
-      <tr>
-        <td>dfdf</td>
-        <td>dfdf</td>
-      </tr>
-    </table>
 
-  </div>
-  <div id="hover"></div>
-  <!-- Popup -->
+<!-- POPUP -->
+
+<div style="display:none">
+  <div id="data">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+</div>
+
+<!-- /POPUP -->
 
   <div class="navbar-collapse collapse menu" style="height:90px !important">
 
@@ -90,16 +64,7 @@ require_once 'app/pension_poll.php';
           <img src="img/famale.jpg" class="img-logo">
           <div class="text-logo"><h1><b>Vorsorgen <br> ist einfach.</b></h1> <h3>Individuell beraten mit Lebensprofil.</h3></div>
           <div class="btn-group-vertical menu-option">
-
-
-            <!-- CSMZeT -->
-            <!-- <a type="button" class="btn btn-danger fancybox"><span class="glyphicon glyphicon-align-justify"></span></a> -->
-            <button id="buttonPopup" class="btn btn-danger"><span class="glyphicon glyphicon-align-justify"></span></button>
-            <!-- <button id="buttonPopup">TEST POPUP</button> -->
-
-
-
-
+            <a class="btn btn-danger fancybox" href="#data"><span class="glyphicon glyphicon-align-justify"></span></a>
          </div>
           <div class="btn-group-vertical menu-contact">
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-earphone"></span></button>
@@ -267,22 +232,15 @@ require_once 'app/pension_poll.php';
 
   function setQuestionFormMode(mode) {
     var form = document.getElementById('QuestionForm');
-    form.setAttribute('action', form.getAttribute('action') + '?mode="' + mode + '"');
+    if ( mode == 'pdf' ) {
+      form.setAttribute('action', 'app/functions/post_create_pdf.php');
+    }
   }
 </script>
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('.fancybox').fancybox();
-            $("#buttonPopup").click(function(){
-              $("#popup").css("display","block");
-              $("#hover").css("display","block");
-            });
-
-            $("#hover").click(function(){
-              $("#popup").css("display","none");
-              $("#hover").css("display","none");
-            });
         });
     </script>
 
