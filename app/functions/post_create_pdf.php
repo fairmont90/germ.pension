@@ -3,15 +3,10 @@
 require_once '../bootstrap.php';
 require_once '../fpdf/fpdf.php';
 
-$sql_req = 'SELECT question FROM questions';
-$sth = $dbh->query($sql_req);
-$questions = $sth->fetchAll();
-
-
 $answers = array();
 $answer_ids = array();
 
-$sql_req = 'SELECT question_id, answer FROM question_answers WHERE id=';
+$sql_req = 'SELECT question_id, answer, question FROM question_answers qa JOIN questions q where qa.question_id = q.id and (qa.id=';
 
 foreach ($_POST as $key => $value) {
     if ( is_numeric($key) ) {
@@ -23,7 +18,7 @@ foreach ($_POST as $key => $value) {
     }
 }
 
-$sql_req .= implode(' OR id=', $answer_ids);
+$sql_req .= implode(' OR qa.id=', $answer_ids) . ')';
 
 $sth = $dbh->query($sql_req);
 $answers_tb = $sth->fetchAll();
@@ -33,7 +28,7 @@ $pdf = new FPDF();
 $pdf->AddPage();
 
 foreach ($answers_tb as $key => $a) {
-    $question = $questions[$a['question_id'] - 1][0];
+    $question = $a['question'];
     $answer = $a['answer'];
     
     $pdf->SetFont('Arial','B',14);
