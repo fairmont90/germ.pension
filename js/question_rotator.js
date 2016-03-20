@@ -1,13 +1,11 @@
 var current_question = 0;
 
 function nextQuestion() {
-    var question_prev_div = document.getElementById('Question' + current_question);
-    question_prev_div.classList.add('hidden');
+    $('#Question' + current_question).fadeOut(500);
 
     current_question++;
 
-    var question_next_div = document.getElementById('Question' + current_question);
-    question_next_div.classList.remove('hidden');
+    $('#Question' + current_question).fadeIn(500);
 
     var qn_div = document.getElementById('QuestionNumbers');
     var spans = qn_div.getElementsByTagName('span');

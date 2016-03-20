@@ -3,6 +3,10 @@ html, body {
   background-color: #F1F1F1;
 }
 
+.easy-hidden {
+  display: none;
+}
+
 .menu {
 	background-color: red;
 }
@@ -109,15 +113,34 @@ html, body {
     background-color: red !important;
 }
 
+.questions {
+  min-height: 500px;
+  position: relative;
+}
+
+.question-logo {
+  width: 20em;
+}
+
+.question-text {
+  font-size: 30pt;
+}
+
 .question-card {
-  background-color: white;
+  /*padding-top: 20px;*/
+  overflow: auto;
   width: 100%;
-  padding-top: 20px;
+  position: absolute;
+}
+
+.question-card table {
+  min-height: 10em;
 }
 
 .question-card.intro table {
   color: black;
   text-align: left;
+  background-color: white;
 }
 
 .question-card.intro th {
@@ -140,6 +163,7 @@ html, body {
   padding: 20px 10px;
   width: 100%;
   color: #FF0000;
+  background-color: white;
 }
 
 .question-card th {

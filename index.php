@@ -11,6 +11,7 @@ require_once 'app/pension_poll.php';
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-2.2.1.min.js"></script>
   <script src="js/question_rotator.js"></script>
   <title>Pension poll</title>
 </head>
@@ -67,9 +68,6 @@ require_once 'app/pension_poll.php';
           <ul class="nav navbar-nav navigation">
             <li><a href="#">Uberblick</a></li>
             <li><a href="#">Detalis</a></li>
-            <!-- <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown"> -->
             </li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -82,12 +80,14 @@ require_once 'app/pension_poll.php';
   <div class="pagination-centered">
     <div id="QuestionNumbers">
       <span class="red">0</span>
-      <?php render_question_numbers(); ?>
+      <?php
+        render_question_numbers();
+      ?>
       <span>e</span>
     </div>
   </div>
                   
-  <form class="questions" action="save_data.php" method="POST">
+  <form id="QuestionForm" class="questions" action="app/evaluate_test.php" method="POST">
     <div id="Question0" class="question-card intro">
       <table>
         <tr>
@@ -111,7 +111,7 @@ require_once 'app/pension_poll.php';
       render_questions();
      ?>
 
-     <div id="Question4" class="question-card outtro hidden">
+     <div id="Question4" class="question-card outtro easy-hidden">
       <table>
         <tr>
           <th valign="middle">FINISH</th>
@@ -122,8 +122,9 @@ require_once 'app/pension_poll.php';
               Please enter your email:<br>
               <input type="text" name="email"><br>
             </div>
-            <div class="input-form">
-              <input type="submit" value="Send">
+            <div class="btn-group">
+              <input class="btn btn-default" onclick="setQuestionFormMode('email')" type="submit" value="Send email">
+              <input class="btn btn-default" onclick="setQuestionFormMode('pdf')" type="submit" value="Get pdf">
             </div>
           </td>
         </tr>
@@ -236,7 +237,13 @@ require_once 'app/pension_poll.php';
 </div>
 
 
+<script type="text/javascript">
 
+  function setQuestionFormMode(mode) {
+    var form = document.getElementById('QuestionForm');
+    form.setAttribute('action', form.getAttribute('action') + '?mode="' + mode + '"');
+  }
+</script>
 
 
 
