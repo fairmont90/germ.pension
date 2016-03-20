@@ -15,7 +15,7 @@ require_once 'app/functions/admin_functions.php';
     
     <div class="navbar navbar-form">
         <div class="btn-group" style="float: right">
-            <a href="add_question.php" class="btn btn-default">ADD Qustion</a>
+            <a href="add_question.php" class="btn btn-default">Add Question</a>
             <a href="index.php" class="btn btn-default">Exit</a>
         </div>
     </div>

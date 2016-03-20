@@ -62,10 +62,10 @@ require_once 'app/bootstrap.php';
             <option value="1">None</option>
             <option value="2">Pension</option>
             <option value="3">Driving licence (Car)</option>
-            <option value="5">House</option>
-            <option value="6">Wedding</option>
-            <option value="7">Children</option>
-            <option value="8">Travel</option>
+            <option value="4">House</option>
+            <option value="5">Wedding</option>
+            <option value="6">Children</option>
+            <option value="7">Travel</option>
           </select>
         </div>
       </div>
@@ -97,10 +97,10 @@ require_once 'app/bootstrap.php';
             <option value="1">None</option>
             <option value="2">Pension</option>
             <option value="3">Driving licence (Car)</option>
-            <option value="5">House</option>
-            <option value="6">Wedding</option>
-            <option value="7">Children</option>
-            <option value="8">Travel</option>
+            <option value="4">House</option>
+            <option value="5">Wedding</option>
+            <option value="6">Children</option>
+            <option value="7">Travel</option>
           </select>
         </div>
       </div>
@@ -132,10 +132,10 @@ require_once 'app/bootstrap.php';
             <option value="1">None</option>
             <option value="2">Pension</option>
             <option value="3">Driving licence (Car)</option>
-            <option value="5">House</option>
-            <option value="6">Wedding</option>
-            <option value="7">Children</option>
-            <option value="8">Travel</option>
+            <option value="4">House</option>
+            <option value="5">Wedding</option>
+            <option value="6">Children</option>
+            <option value="7">Travel</option>
           </select>
         </div>
       </div>
@@ -167,10 +167,10 @@ require_once 'app/bootstrap.php';
             <option value="1">None</option>
             <option value="2">Pension</option>
             <option value="3">Driving licence (Car)</option>
-            <option value="5">House</option>
-            <option value="6">Wedding</option>
-            <option value="7">Children</option>
-            <option value="8">Travel</option>
+            <option value="4">House</option>
+            <option value="5">Wedding</option>
+            <option value="6">Children</option>
+            <option value="7">Travel</option>
           </select>
         </div>
       </div>

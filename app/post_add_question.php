@@ -34,7 +34,9 @@ for ($i=1; $i < 5; $i++) {
     $sth->bindParam(':answer', $answer_text);
     $sth->bindParam(':icon', $answer_icon);
     $sth->bindParam(':cat_id', $answer_category_id, PDO::PARAM_INT);
-    $sth->execute();
+    if ( $sth->execute() ) {
+        continue;
+    }
 }
 
 header('Location: /admin.php');

@@ -33,10 +33,10 @@ CREATE TABLE `answers` (
   KEY `fk_question_idx` (`question_id`),
   KEY `fk_answer_category_idx` (`answer_category_id`),
   KEY `fk_answer_idx` (`answer_id`),
-  CONSTRAINT `fk_answer_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_answer_question` FOREIGN KEY (`question_id`) REFERENCES `questions` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_answer` FOREIGN KEY (`answer_id`) REFERENCES `question_answers` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_answer_category` FOREIGN KEY (`answer_category_id`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_answer` FOREIGN KEY (`answer_id`) REFERENCES `question_answers` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_answer_question` FOREIGN KEY (`question_id`) REFERENCES `questions` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_answer_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -90,9 +90,9 @@ CREATE TABLE `question_answers` (
   PRIMARY KEY (`id`),
   KEY `fk_question_idx` (`question_id`),
   KEY `fk_categories_idx` (`category_id`),
-  CONSTRAINT `fk_question` FOREIGN KEY (`question_id`) REFERENCES `questions` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_categories` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_question` FOREIGN KEY (`question_id`) REFERENCES `questions` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +101,7 @@ CREATE TABLE `question_answers` (
 
 LOCK TABLES `question_answers` WRITE;
 /*!40000 ALTER TABLE `question_answers` DISABLE KEYS */;
-INSERT INTO `question_answers` VALUES (13,1,'chamomile','img/questions/flowers-1.png',1),(14,1,'rose','img/questions/flowers-2.png',1),(15,1,'tulips','img/questions/flowers-3.png',1),(16,1,'gladiolus','img/questions/flowers-4.png',1),(17,2,'Audi','img/questions/audi.png',1),(18,2,'Bmw','img/questions/bmw.png',1),(19,2,'Mercedes','img/questions/mercedes.png',1),(20,2,'Ford','img/questions/ford.png',1),(21,3,'Paris','img/questions/city_1.png',1),(22,3,'London','img/questions/city_2.png',1),(23,3,'Boston','img/questions/city_3.png',1),(24,3,'China','img/questions/city_4.png',1),(25,5,'Yes','img/questions/city_4.png',1),(26,5,'No','img/questions/city_4.png',1),(27,5,'Maybe','img/questions/city_4.png',1),(28,5,'I don\'t know','img/questions/city_4.png',1),(29,6,'Is this a question?','img/logos/logo_1.png',1),(30,6,'Is this a question?','img/logos/logo_1.png',1),(31,6,'Is this a question?','img/logos/logo_1.png',1),(32,6,'Is this a question?','img/logos/logo_1.png',1),(37,8,'Yes','img/questions/4.1.png',1),(38,8,'No','img/questions/4.1.png',1),(39,8,'Maybe','img/questions/4.1.png',1),(40,8,'I don\'t know','img/questions/4.1.png',1);
+INSERT INTO `question_answers` VALUES (13,1,'chamomile','img/questions/flowers-1.png',1),(14,1,'rose','img/questions/flowers-2.png',1),(15,1,'tulips','img/questions/flowers-3.png',1),(16,1,'gladiolus','img/questions/flowers-4.png',1),(17,2,'Audi','img/questions/audi.png',1),(18,2,'Bmw','img/questions/bmw.png',1),(19,2,'Mercedes','img/questions/mercedes.png',1),(20,2,'Ford','img/questions/ford.png',1),(21,3,'Paris','img/questions/city_1.png',1),(22,3,'London','img/questions/city_2.png',1),(23,3,'Boston','img/questions/city_3.png',1),(24,3,'China','img/questions/city_4.png',1),(25,5,'Yes','img/questions/city_4.png',1),(26,5,'No','img/questions/city_4.png',1),(27,5,'Maybe','img/questions/city_4.png',1),(28,5,'I don\'t know','img/questions/city_4.png',1),(29,6,'Is this a question?','img/logos/logo_1.png',1),(30,6,'Is this a question?','img/logos/logo_1.png',1),(31,6,'Is this a question?','img/logos/logo_1.png',1),(32,6,'Is this a question?','img/logos/logo_1.png',1),(37,8,'Yes','img/questions/4.1.png',1),(38,8,'No','img/questions/4.1.png',1),(39,8,'Maybe','img/questions/4.1.png',1),(40,8,'I don\'t know','img/questions/4.1.png',1),(41,9,'Yes','img/questions/4.1.png',1),(42,9,'No','img/questions/4.1.png',1),(43,9,'Maybe','img/questions/4.1.png',1),(44,9,'I don\'t know','img/questions/4.1.png',1),(45,10,'Yes','img/questions/4.1.png',1),(46,10,'No','img/questions/4.1.png',1),(47,10,'Maybe','img/questions/4.1.png',1),(48,10,'I don\'t know','img/questions/4.1.png',1),(49,11,'Yes','img/questions/4.1.png',1),(50,11,'No','img/questions/4.1.png',1),(51,11,'Maybe','img/questions/4.1.png',1),(52,11,'I don\'t know','img/questions/4.1.png',1),(57,13,'Yes','img/questions/4.1.png',1),(58,13,'No','img/questions/4.1.png',1),(59,13,'Maybe','img/questions/4.1.png',1),(60,13,'I don\'t know','img/questions/4.1.png',1),(61,14,'Yes','img/questions/4.1.png',1),(62,14,'No','img/questions/4.1.png',1),(63,14,'Maybe','img/questions/4.1.png',1),(64,14,'I don\'t know','img/questions/4.1.png',1);
 /*!40000 ALTER TABLE `question_answers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -144,7 +144,7 @@ CREATE TABLE `questions` (
   `question_icon` varchar(255) DEFAULT NULL,
   `is_active` tinyint(2) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -153,7 +153,7 @@ CREATE TABLE `questions` (
 
 LOCK TABLES `questions` WRITE;
 /*!40000 ALTER TABLE `questions` DISABLE KEYS */;
-INSERT INTO `questions` VALUES (1,'Which flowers do you like?','img/pic-1.png',1),(2,'What is your favorite car vendor?','img/pic-1.png',1),(3,'What is your favorite city?','img/pic-1.png',1),(4,'Is this question active?','img/pic-1.png',0),(5,'Is this a valid question','img/logos/logo_1.png',1),(6,'Is this a question?','img/logos/logo_1.png',1),(7,'Is this a question?','img/logos/logo_1.png',1),(8,'Is this a question?','img/logos/logo_1.png',1);
+INSERT INTO `questions` VALUES (1,'Which flowers do you like?','img/pic-1.png',0),(2,'What is your favorite car vendor?','img/pic-1.png',0),(3,'What is your favorite city?','img/pic-1.png',0),(4,'Is this question active?','img/pic-1.png',0),(5,'Is this a valid question','img/logos/logo_1.png',0),(6,'Is this a question?','img/logos/logo_1.png',0),(7,'Is this a question?','img/logos/logo_1.png',0),(8,'Is this a question?','img/logos/logo_1.png',0),(9,'Is this a question?','img/logos/logo_1.png',0),(10,'Is this a question?','img/logos/logo_1.png',0),(11,'Is this a question?','img/logos/logo_1.png',0),(12,'How do you like to spend time?','img/logos/logo_1.png',0),(13,'Is this a question?','img/logos/logo_1.png',0),(14,'Is this a question?','img/logos/logo_1.png',1);
 /*!40000 ALTER TABLE `questions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -243,4 +243,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-20 13:54:03
+-- Dump completed on 2016-03-20 16:26:52
