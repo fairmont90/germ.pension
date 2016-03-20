@@ -19,11 +19,10 @@ function render_question_numbers() {
     global $questions;
 
     foreach ($questions as $key => $question) {
-        $i ++;
-
         if ( $question['is_active'] == 0 ) {
             continue;
         }
+        $i ++;
 
         echo '<span>' . $i . '</span>';
     }
