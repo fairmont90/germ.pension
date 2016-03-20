@@ -11,11 +11,48 @@ require_once 'app/pension_poll.php';
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
   <script src="js/jquery-2.2.1.min.js"></script>
   <script src="js/question_rotator.js"></script>
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
   <title>Pension poll</title>
 </head>
 <body>
+  
+  <!-- Popup -->
+  <div id="popup">
+    
+    <table>
+      <tr>
+        <td>fdf</td>
+        <td>dfdf</td>
+      </tr>
+      <tr>
+        <td>fdf</td>
+        <td>dfdf</td>
+      </tr>
+      <tr>
+        <td>fdf</td>
+        <td>dfdf</td>
+      </tr>
+      <tr>
+        <td>dfdf</td>
+        <td>dfdf</td>
+      </tr>
+      <tr>
+        <td>dfdf</td>
+        <td>dfdf</td>
+      </tr>
+      <tr>
+        <td>dfdf</td>
+        <td>dfdf</td>
+      </tr>
+    </table>
+
+  </div>
+  <div id="hover"></div>
+  <!-- Popup -->
+
   <div class="navbar-collapse collapse menu" style="height:90px !important">
 
         <?php if ( !isset($_SESSION['id']) ) { ?>
@@ -53,7 +90,16 @@ require_once 'app/pension_poll.php';
           <img src="img/famale.jpg" class="img-logo">
           <div class="text-logo"><h1><b>Vorsorgen <br> ist einfach.</b></h1> <h3>Individuell beraten mit Lebensprofil.</h3></div>
           <div class="btn-group-vertical menu-option">
-            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-align-justify"></span></button>
+
+
+            <!-- CSMZeT -->
+            <!-- <a type="button" class="btn btn-danger fancybox"><span class="glyphicon glyphicon-align-justify"></span></a> -->
+            <button id="buttonPopup" class="btn btn-danger"><span class="glyphicon glyphicon-align-justify"></span></button>
+            <!-- <button id="buttonPopup">TEST POPUP</button> -->
+
+
+
+
          </div>
           <div class="btn-group-vertical menu-contact">
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-earphone"></span></button>
@@ -224,6 +270,21 @@ require_once 'app/pension_poll.php';
     form.setAttribute('action', form.getAttribute('action') + '?mode="' + mode + '"');
   }
 </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+            $("#buttonPopup").click(function(){
+              $("#popup").css("display","block");
+              $("#hover").css("display","block");
+            });
+
+            $("#hover").click(function(){
+              $("#popup").css("display","none");
+              $("#hover").css("display","none");
+            });
+        });
+    </script>
 
 
 
