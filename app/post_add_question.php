@@ -28,7 +28,7 @@ for ($i=1; $i < 5; $i++) {
     $answer_icon = $_POST['answer_'.$i.'_img'];
     $answer_category_id = $_POST['answer_'.$i.'_category'];
 
-    echo $answer_text .' '. $answer_icon .' '. $answer_category_id . '<br>';
+    // echo $answer_text .' '. $answer_icon .' '. $answer_category_id . '<br>';
 
     $sth = $dbh->prepare($sql_req);
     $sth->bindParam(':answer', $answer_text);
@@ -37,4 +37,4 @@ for ($i=1; $i < 5; $i++) {
     $sth->execute();
 }
 
-header('lcation: admin.php');
+header('Location: /admin.php');
