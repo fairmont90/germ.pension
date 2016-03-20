@@ -22,7 +22,52 @@ require_once 'app/pension_poll.php';
 <!-- POPUP -->
 
 <div style="display:none">
-  <div id="data">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <div id="data">
+    <h1>Your test results are:</h1>
+    <div id="Category1" class="category-row my-hidden">This is none</div>
+    <div id="Category2" class="category-row">
+      <img src="img/logos/logo_1.png" alt="">
+      <div>
+        <header>Pension</header>
+        <span>The pension is interesting to you</span>
+      </div>
+    </div>
+    <div id="Category3" class="category-row">
+      <img src="img/logos/logo_2.png" alt="">
+      <div>
+        <header>Driving licence</header>
+        <span>You are interested the cars</span>
+      </div>
+    </div>
+    <div id="Category4" class="category-row">
+      <img src="img/logos/logo_3.png" alt="">
+      <div>
+        <header>House</header>
+        <span>You are interested new house</span>
+      </div>
+    </div>
+    <div id="Category5" class="category-row">
+      <img src="img/logos/logo_4.png" alt="">
+      <div>
+        <header>Wedding</header>
+        <span>You are interested marriage</span>
+      </div>
+    </div>
+    <div id="Category6" class="category-row">
+      <img src="img/logos/logo_5.png" alt="">
+      <div>
+        <header>Children</header>
+        <span>You want to bring children</span>
+      </div>
+    </div>
+    <div id="Category7" class="category-row">
+      <img src="img/logos/logo_6.png" alt="">
+      <div>
+        <header>Travel</header>
+        <span>ou are interested travel</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- /POPUP -->

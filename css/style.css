@@ -307,6 +307,28 @@ html, body {
 
 /*CSMZeT popup*/
 
+.category-row {
+  margin-bottom: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.category-row > div {
+  padding-left: 20px;
+}
+
+.category-row > div > header {
+  color: red;
+  font-weight: bold;
+}
+
+.category-row > div > span {
+  color: black;
+}
+
 #popup {
   display: none;
   background-color: white;
