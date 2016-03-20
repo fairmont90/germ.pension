@@ -110,26 +110,6 @@ require_once 'app/pension_poll.php';
     <?php 
       render_questions();
      ?>
-
-     <div id="Question4" class="question-card outtro easy-hidden">
-      <table>
-        <tr>
-          <th valign="middle">FINISH</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="input-form">
-              Please enter your email:<br>
-              <input type="text" name="email"><br>
-            </div>
-            <div class="btn-group">
-              <input class="btn btn-default" onclick="setQuestionFormMode('email')" type="submit" value="Send email">
-              <input class="btn btn-default" onclick="setQuestionFormMode('pdf')" type="submit" value="Get pdf">
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
     
   </form>
 </div>

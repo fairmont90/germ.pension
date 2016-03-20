@@ -276,23 +276,31 @@ html, body {
 
 
 /* add_question */
-.file-input {
+
+.btn-file {
     position: relative;
     overflow: hidden;
-    margin: 16px 0;
 }
-
-.file-input input[type=file] {
+.btn-file input[type=file] {
     position: absolute;
     top: 0;
     right: 0;
     min-width: 100%;
     min-height: 100%;
-    font-size: 999px;
+    font-size: 100px;
     text-align: right;
-   /* opacity: 0;*/
+    filter: alpha(opacity=0);
+    opacity: 0;
     outline: none;
     background: white;
     cursor: inherit;
     display: block;
+}
+
+.question-counter {
+  display: block;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 15px;
+  font-weight: bold;
 }
