@@ -9,11 +9,17 @@ $sth = $dbh->query($sql_req);
 
 $questions = $sth->fetchAll();
 
-$questions_counter = 0;
-
 $sql_req = 'select * from question_answers';
 $sth = $dbh->query($sql_req);
 $answers = $sth->fetchAll();
+
+$active_questions = 0;
+foreach ($questions as $key => $q) {
+    if ( $q['is_active'] == 0 ) {
+        continue;
+    }
+    $active_questions ++;
+}
 
 function render_question_numbers() {
     global $questions;
@@ -29,7 +35,7 @@ function render_question_numbers() {
 }
 
 function render_questions() {
-    global $answers, $questions;
+    global $answers, $questions, $active_questions;
 
   foreach ($questions as $key => $question) {
     $qid = $question['id'];
@@ -39,6 +45,7 @@ function render_questions() {
     }
 
     $questions_counter++;
+    $is_last_one = $active_questions == $questions_counter;
     ?>
 <div id="Question<?php echo $questions_counter?>" class="question-card easy-hidden">
   <table>
@@ -56,7 +63,7 @@ function render_questions() {
     }
 ?>
 <div class="input-form col-md-3">
-  <input id="Opt-<?php echo $qid . '-' . $answer['id']?>" onclick="nextQuestion()" type="radio" name="<?php echo $qid ?>" value="<?php echo $answer['category_id'] . ',' . $answer['id'] ?>" class="option">
+  <input id="Opt-<?php echo $qid . '-' . $answer['id']?>" onclick="<?= $is_last_one ? 'finishTest' : 'nextQuestion' ?>()" type="radio" name="<?php echo $qid ?>" value="<?php echo $answer['category_id'] . ',' . $answer['id'] ?>" class="option">
   <label for="Opt-<?php echo $qid . '-' . $answer['id']?>">
     <img src="<?php echo $answer['answer_image'] ?>" alt="opt-1-1">
     <span><?php echo $answer['answer'] ?></span>
@@ -76,14 +83,13 @@ function render_questions() {
       <th valign="middle">FINISH</th>
     </tr>
     <tr>
+      <td><h1>You have completed your test</h1></td>
+    </tr>
+    <tr>
       <td>
-        <div class="input-form">
-          Please enter your email:<br>
-          <input type="text" name="email"><br>
-        </div>
-        <div class="btn-group">
-          <input class="btn btn-default" onclick="setQuestionFormMode('email')" type="submit" value="Send email">
-          <input class="btn btn-default" onclick="setQuestionFormMode('pdf')" type="submit" value="Get pdf">
+        <div class="btn-group btn-group-vertical">
+          <input class="btn btn-default" onclick="setQuestionFormMode('pdf')" type="submit" value="Save results to pdf">
+          <a class="btn btn-default" onclick="alert('this function is not ready yet')">Send results by email</a>
         </div>
       </td>
     </tr>

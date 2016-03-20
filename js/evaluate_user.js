@@ -3,12 +3,20 @@ function finishTest() {
     
     var top_three = getTopThreeCategories();
 
-    alert(top_three);
-    
+    for ( var i=0; i < top_three.length; i++ ) {
+        var cid = top_three[i];
+
+        if ( cid > 1 && cid < 8 ) {
+            var cat_div = document.getElementById('Category' + cid);
+            cat_div.classList.remove('easy-hidden');
+        }
+    }
+
+    nextQuestion();
 }
 
 function showLoadingScreen() {
-    alert('load has been started');
+    $.fancybox($('#data'));
 }
 
 function getTopThreeCategories() {
@@ -33,7 +41,7 @@ function getTopThreeCategories() {
     var max = 0;
     var counter = 3;
     while ( counter -- ) {
-        for ( var i=category_points.length; i>=0; i-- ) {
+        for ( var i=category_points.length; i>1; i-- ) {
             if ( category_points[i] > max ) {
                 max = category_points[i];
             }
@@ -44,4 +52,6 @@ function getTopThreeCategories() {
         category_points[category_top_id] = 0;
         max = 0;
     }
+
+    return top_three;
 }
