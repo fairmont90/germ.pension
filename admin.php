@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<div class="navbar-collapse collapse menu" style="height:90px !important">
+     <a href="index.php" class="btn btn-default">Exit</a>
+     <a href="add_question.php" class="btn btn-default">ADD Qustion</a>
+</div> 
 
 
 <?php
@@ -31,7 +34,7 @@ foreach ($result as $key => $label) {
 
         echo "<div>";
         //echo '<span><b>' . 'user_email' . '</b></span>';
-        echo "<span class='field-user-email'><b>".$label['email']."</b></span><br>";
+        echo "<span><b>".$label['email']."</b></span><br>";
 
         $uid = $user_id;
         
